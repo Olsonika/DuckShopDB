@@ -4,14 +4,14 @@ USE DuckShopDB;
 
 CREATE TABLE Users (
     UserID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    Password varchar(15),
+    Password varchar(15) NOT NULL,
     PhoneNumber varchar(15),
-    Email varchar(100) NOT NULL,
-    FirstName varchar(255) NOT NULL,
-    LastName varchar(255) NOT NULL,
-    Street varchar(100) NOT NULL,
-    City varchar(100) NOT NULL,
-    Country varchar(50) NOT NULL
+    Email varchar(100),
+    FirstName varchar(255),
+    LastName varchar(255),
+    Street varchar(100),
+    City varchar(100),
+    Country varchar(50)
 );
 
 CREATE TABLE Product (
